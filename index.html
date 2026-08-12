@@ -255,6 +255,21 @@
         }
         .page.active { pointer-events: auto; z-index: 2; opacity: 1; visibility: visible; }
         .page.exit-left { opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; z-index: 1; }
+        .page::-webkit-scrollbar { width: 9px; }
+        .page::-webkit-scrollbar-track { background: transparent; }
+        .page::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--text-secondary) 26%, transparent);
+            border-radius: 9999px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            transition: background 0.3s ease;
+        }
+        .page::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent) 55%, transparent);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+        }
+        .page { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--text-secondary) 26%, transparent) transparent; }
 
         .anim-fade-slide {
             opacity: 0; transform: translateY(20px);
@@ -1954,7 +1969,33 @@
                     '你是我藏在风里的心动,也是风里的遗憾。',
                     '晚风路过我身边,我骗它说我不想你。',
                     '后来风停了,爱意也散了,只有我站在原地。',
-                    '风起于青萍之末,爱起于惊鸿一瞥。'
+                    '风起于青萍之末,爱起于惊鸿一瞥。',
+                    '要多剧烈的痛,才能安静放你走。',
+                    '可我却陷在你给的温柔,在梦已破碎了以后。',
+                    '多巴胺其实已经给出了个结果,是我不想承认是我在闪躲。',
+                    '是否爱上一个人不问明天过后,山明和水秀不比你有看头。',
+                    '热情一天天的丢了,关系勉强保持着。',
+                    '当我离开这个世界变成矛盾体,当我离开这个世界一路寻找你。',
+                    '失去了你好像失去我的本能力。',
+                    '她说难过的眼睛像柏林的一场雾。',
+                    '遗憾都太过清楚泪水才会更模糊。',
+                    '心事在起起伏伏曾爱过在不停的谢幕。',
+                    '这场博弈 我早就注定一败涂地。',
+                    '把心掏给你 对我来说才是最叛逆的决定。',
+                    '决定我不再想毕竟总是难分难解。',
+                    '你像是藏在我平淡生活中的彩页。',
+                    '或许好久没联系,或许没必要回应,或许不值得记起。',
+                    '我的某一部分永远爱你,像是星辰守着夜的秘密。',
+                    'My baby my treasure I swear my forever。',
+                    'My baby my treasure I love you forever。',
+                    'Oh, gonna Forever be with you I’m here waiting for you。',
+                    'already crushed on you made me crazy。',
+                    'I am counting 3 2 1 until you make it。',
+                    'you should have known goodness you’re my favorite。',
+                    'go circle round and round I’m falling in love。',
+                    '有天你问你算什么,回答是我整个世界。',
+                    '我们相拥告别纷纷散落荒野,轻描淡写地回应生活的问卷。',
+                    '我相信天作之合他们都说"最般配星座"。'
                 ];
                 let current = SUBTITLES[Math.floor(Math.random() * SUBTITLES.length)];
                 el.textContent = current;
