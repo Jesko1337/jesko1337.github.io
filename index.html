@@ -801,7 +801,11 @@
             visibility: hidden;
             transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
             pointer-events: none;
-            white-space: nowrap;
+            width: max-content;
+            max-width: min(78vw, 420px);
+            text-align: center;
+            line-height: 1.5;
+            white-space: normal;
         }
         .night-note.show {
             opacity: 1;
@@ -1166,6 +1170,7 @@
                     <div class="skills-container">
                         <span class="skill-tag anim-slide-right">我的世界</span>
                         <span class="skill-tag anim-slide-right">巅峰极速</span>
+                        <span class="skill-tag anim-slide-right">三角洲</span>
                     </div>
                 </div>
 
@@ -1294,10 +1299,10 @@
         </div>
     </div>
 
-    <audio id="bgMusic" src="SWEATPANTS.mp3" loop></audio>
+    <audio id="bgMusic" src="所以爱.mp3" loop></audio>
     
     <div class="music-ball" id="musicBall">
-        <span class="music-label" id="musicLabel"><span class="music-label-text">SWEATPANTS</span><span class="music-label-sub">要听听歌吗</span></span>
+        <span class="music-label" id="musicLabel"><span class="music-label-text">所以爱</span><span class="music-label-sub">要听听歌吗</span></span>
         <svg class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 18V5l12-2v13"/>
             <circle cx="6" cy="18" r="3"/>
